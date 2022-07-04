@@ -1,19 +1,17 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+// import { Routes, Route } from 'react-router-dom';
 import GlobalFonts from './fonts/fonts';
-// eslint-disable-next-line import/no-cycle
-import Home from './index';
-import Search from './Search';
+// import Search from './Search';
 import 'normalize.css';
 
 function App() {
   return (
     <div>
       <GlobalFonts />
-      <Routes>
-        <Route path="/" element={<Home />} />
+      {/* <Routes>
+        <Route path="/" element={<App />} />
         <Route path="/search" element={<Search />} />
-      </Routes>
+      </Routes> */}
       App Placeholder
     </div>
   );
