@@ -4,6 +4,7 @@ import GlobalFonts from './fonts/fonts';
 // eslint-disable-next-line import/no-cycle
 import Home from './index';
 import Search from './Search';
+import 'normalize.css';
 
 function App() {
   return (
