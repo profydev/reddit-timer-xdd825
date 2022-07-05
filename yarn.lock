@@ -11104,6 +11104,7 @@ styled-components@^5.3.5:
     shallowequal "^1.1.0"
     supports-color "^5.5.0"
 
+
 styled-normalize@^8.0.7:
   version "8.0.7"
   resolved "https://registry.yarnpkg.com/styled-normalize/-/styled-normalize-8.0.7.tgz#e883bff6a0c59a65a39365a4eb9c6cf48372c61f"
