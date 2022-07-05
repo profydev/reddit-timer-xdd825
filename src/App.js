@@ -1,19 +1,23 @@
 import React from 'react';
-// import { Routes, Route } from 'react-router-dom';
-import GlobalFonts from './fonts/fonts';
-// import Search from './Search';
-import 'normalize.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
+import { Normalize } from 'styled-normalize';
+import GlobalStyle from './GlobalStyle';
+import theme from './theme';
 
 function App() {
   return (
-    <div>
-      <GlobalFonts />
-      {/* <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/search" element={<Search />} />
-      </Routes> */}
-      App Placeholder
-    </div>
+    <ThemeProvider theme={theme}>
+      <Router>
+        <Normalize />
+        <GlobalStyle />
+        <Routes>
+          <Route exact path="/search">Search</Route>
+          <Route path="/">Home</Route>
+          <Route>404 - Not Found</Route>
+        </Routes>
+      </Router>
+    </ThemeProvider>
   );
 }
 
